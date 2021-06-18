@@ -1,0 +1,43 @@
+.section-1 {
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include breakpoint-up(medium){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .info {
+            padding: 5em;
+
+            h2 {
+                font-size: $font-xlg;
+                font-family: $fraunces;
+                margin-bottom: 1em;
+            }
+            p{
+                font-size: $font-med;
+                line-height: 1.5;
+                margin-bottom: 1em;
+                color: $veryDarkDesaturateBlue;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-family: $fraunces;
+            }
+        }
+        .image {
+            background-image: url("../../images/mobile/image-transform.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 30rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

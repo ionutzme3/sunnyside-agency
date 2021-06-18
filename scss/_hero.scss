@@ -1,0 +1,32 @@
+.hero {
+    // position: relative;
+    background-image: url("../../images/mobile/image-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    @include breakpoint-up(medium){
+        background-image: url("../../images/desktop/image-header.jpg");
+        height: 50vw;
+    }
+    
+    &__content {
+
+
+      h1{
+          font-size: $font-xlg;
+          color: $white;
+          text-transform: uppercase;
+          margin-bottom: 1em;
+          font-family: $fraunces;
+      }
+    }
+
+   
+}

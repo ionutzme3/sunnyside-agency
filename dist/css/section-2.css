@@ -1,0 +1,19 @@
+.section-2__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.section-2__content .image {
+  background: url("../../images/mobile/image-stand-out.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+
+.section-2__content .image img {
+  width: 100%;
+}
+/*# sourceMappingURL=section-2.css.map */

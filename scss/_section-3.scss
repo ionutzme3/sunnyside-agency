@@ -1,0 +1,78 @@
+.section-3 {
+    @include breakpoint-up(medium) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    img {
+
+        width: 100%;
+    }
+    .item-1 {
+        position: relative;
+        background-image: url("../../images/mobile/image-graphic-design.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 35rem;
+
+        @include breakpoint-up(medium){
+            background-image: url("../../images/desktop/image-graphic-design.jpg");
+
+        }
+
+        .info-content {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+
+            h3 {
+                font-size: $font-med;
+                font-family: $fraunces;
+                margin-bottom: 1em;
+                color: $darkBlue;
+            }
+            p {
+                line-height: 1.5;
+                color: $darkBlue;
+                font-size: 0.8rem;
+                font-family: $fraunces;
+            }
+        }
+    }
+    .item-2 {
+        position: relative;
+        background-image: url("../../images/mobile/image-photography.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 35rem;
+
+        @include breakpoint-up(medium){
+            background-image: url("../../images/desktop/image-photography.jpg");
+
+        }
+
+        .info-content {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+
+            h3 {
+                font-size: $font-med;
+                font-family: $fraunces;
+                margin-bottom: 1em;
+                color: $darkBlue;
+            }
+            p {
+                line-height: 1.5;
+                color: $darkBlue;
+                font-size: 0.8rem;
+                font-family: $fraunces;
+            }
+        }
+    }
+}
